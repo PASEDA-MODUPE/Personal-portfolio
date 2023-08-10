@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/42a2a02f50.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            
+            <nav class="navbar">
+                
+                <ul id="sidemenu"  >
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <div class="ham">
+                <!-- <i class="fas fa-bars" onclick="openmenu()"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i> -->
+                </div>
+            </nav>
+            <div class="header-text">
+                <h1><span>Hi, &#9995</span> <br>I'm Modupe Paseda i build things for web </h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------About-------------------------------------------- -- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG-20230802-WA0000.jpg"  class="about-img" alt="">
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title" style="color:  #006400;">About Me</h1>
+                    <!-- <span><img src="images/IMG-20230802-WA0000.jpg" width="100px" style="border-radius: 500px;"  alt=""></span> -->
+                    <p>Passionate junior front end developer with a desire to learn and grow in a collaborative team environment. Skilled in HTML, CSS, and Javascript. Excels at creating pixel perfect designs and cross-browser compatibility.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li ><span style="color:  #006400;">Web Development</span><br> Web app Development</li>
+                            <li><span></span><br> Designing Web/App interfaces</li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            
+                            <li><span>feb 2023-present</span><br>Web development Sail Tech.</li>
+                            <li><span>2022 - 2022</span><br>Trainee IT Support CWG Academy.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Software Develpment. <br>Sail Tech</li>
+                            <li><span>2019</span><br> Lagos State Polythecnic. <br>Hospitality Management</li>
+                            <li><span>2023</span><br>Certification in Front-End Development.<br>Tech4dev</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------Service--------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" >My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Development of fully responsive web apps with monitored user feedback and performs routine updates to website layouts.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Development of fully responsive web apps with monitored user feedback and performs routine updates to website layouts.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------Portfolio ----------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title" style="color:  #006400;">projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project3.jpg" alt="project 1">
+                    <div class="layer">
+                        <h3>Profile Card</h3>
+                        <p>The App Generates users profile card randomnly.</p>
+                        <a href="https://github.com//PASEDA-MODUPE/profile-card"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/download.jpg" alt="project 2">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>The app that connects you to the location of all countries and cities around the world.</p>
+                        <a target="_blank" href="https://PASEDA-MODUPE.github.io/weather-App/ "><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project1.jpg" alt="project 3">
+                    <div class="layer">
+                        <h3>Tips Calculator</h3>
+                        <p>The app that allows you to calculate the Tips from customer </p>
+                        <a target="_blank" href=" https://github.com/PASEDA-MODUPE/Tips-calculator"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project5.jpg" alt="project 4">
+                    <div class="layer">
+                        <h3>Dictionary</h3>
+                        <p>Search for millions of words and gets the accurate meaning </p>
+                        <a target="_blank" href="https://paseda-modupe.github.io/Dictionary/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#" class="btn  btn-1 outer-shadow hover-in-shadow" style="color:  black ;background-color: #006400;">See more</a>
+        </div>
+    </div>
+    <!-- ----------------------contact------------------------ -->
+    <div id="contact">
+        <div class="container2">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title" style="color: green;">Contact Me</h1>
+                   
+                    <p><i  class="fas fa-phone-square-alt"></i> <a href="tel: 07013213898">07013213898</a></p>
+                    <p><i  class="fa fa-envelope"></i> <a href="mailto: pasedasunday@gmaail.com">Pasedasunday@gmail.com</a></p>
+                    <div class="social-icons">
+                       <a href="https://github.com/PASEDA-MODUPE?tab=repositories" target="_blank"><img src="images/github.png"  alt=""></a> 
+                       <a href="" target="_blank"><img src="images/twitter.svg"  alt=""></a> 
+                       <a href="https://www.linkedin.com/in/paseda-modupe-056094236" target="_blank"><img src="images/linkedin.svg"  alt=""></a> 
+                    
+                    </div>
+                    <a href="images/ExamplePdf.pdf" target="_blank" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="eame" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+         <div class="copyright">
+            <p class="footers">Copyright &copy Modupe Oluwaseun Paseda .</p>
+         </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");  
+      var tabcontents = document.getElementsByClassName("tab-contents");  
+
+      function opentab(tabname){
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab")
+        }
+         event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+      }
+    </script>
+    <script>
+                var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+    </script>
+
+      
+    
+
+    
+</body>
+</html>
